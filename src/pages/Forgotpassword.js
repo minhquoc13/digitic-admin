@@ -15,7 +15,7 @@ const ForgotPassword = () => {
         <form action="">
           <CustomInput
             type="text"
-            placehoder="Email Address"
+            label="Email Address"
             id="email"
           ></CustomInput>
           <button

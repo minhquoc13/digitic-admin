@@ -13,12 +13,12 @@ const Login = () => {
         <form action="">
           <CustomInput
             type="text"
-            placehoder="Email Address"
+            label="Email Address"
             id="email"
           ></CustomInput>
           <CustomInput
             type="password"
-            placehoder="Password"
+            label="Password"
             id="password"
           ></CustomInput>
           <button
