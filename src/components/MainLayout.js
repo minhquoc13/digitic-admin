@@ -76,7 +76,7 @@ const MainLayout = () => {
                   label: "Brand",
                 },
                 {
-                  key: "list-brand",
+                  key: "brand-list",
                   icon: <SiBrandfolder className="fs-4" />,
                   label: "Brand List",
                 },
@@ -86,7 +86,7 @@ const MainLayout = () => {
                   label: "Category",
                 },
                 {
-                  key: "list-category",
+                  key: "category-list",
                   icon: <BiCategoryAlt className="fs-4" />,
                   label: "Category List",
                 },
@@ -96,19 +96,19 @@ const MainLayout = () => {
                   label: "Color",
                 },
                 {
-                  key: "list-color",
+                  key: "color-list",
                   icon: <AiOutlineBgColors className="fs-4" />,
                   label: "Color List",
                 },
               ],
             },
             {
-              key: "order",
+              key: "orders",
               icon: <FaListCheck className="fs-4" />,
               label: "Order",
             },
             {
-              key: "blog",
+              key: "blogs",
               icon: <BiLogoBlogger className="fs-4" />,
               label: "Blog",
               children: [
@@ -162,7 +162,7 @@ const MainLayout = () => {
           />
           <div className="d-flex gap-3 align-items-center">
             <div className="position-relative">
-              <AiOutlineBell></AiOutlineBell>
+              <AiOutlineBell className="fs-5"></AiOutlineBell>
               <span className="badge bg-warning rounded-circle p-1 position-absolute">
                 99+
               </span>
@@ -189,7 +189,7 @@ const MainLayout = () => {
             background: colorBgContainer,
           }}
         >
-          <Outlet></Outlet>
+          <Outlet />
         </Content>
       </Layout>
     </Layout>
