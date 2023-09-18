@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import {
   AiOutlineDashboard,
   AiOutlineShoppingCart,
@@ -178,6 +178,10 @@ const MainLayout = () => {
                 <h5>quangteo</h5>
                 <p>toilateo@gmail.com</p>
               </div>
+              <div
+                className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              ></div>
             </div>
           </div>
         </Header>

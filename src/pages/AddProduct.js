@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import CustomInput from "../components/CustomInput";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
 
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
@@ -27,16 +25,23 @@ const props = {
     console.log("Dropped files", e.dataTransfer.files);
   },
 };
-const AddBlog = () => {
-  const [desc, setDesc] = useState();
-  const handleDesc = (e) => {
-    setDesc(e);
-  };
+const AddProduct = () => {
   return (
     <div>
-      <h3 className="mb-4 title">Add Blog</h3>
-      <div className="">
+      <h3 className="mb-4 title">Add Product</h3>
+      <div>
         <form action="">
+          <CustomInput type="text" label="Enter Product Title" />
+          <CustomInput type="number" label="Enter Product Price" />
+          <select name="" id="" className="form-control py-3 mb-3">
+            <option value="">Select Category</option>
+          </select>
+          <select name="" id="" className="form-control py-3 mb-3">
+            <option value="">Select Color</option>
+          </select>
+          <select name="" id="" className="form-control py-3 mb-3">
+            <option value="">Select Brand</option>
+          </select>
           <Dragger {...props}>
             <p className="ant-upload-drag-icon">
               <InboxOutlined />
@@ -49,25 +54,11 @@ const AddBlog = () => {
               uploading company data or other banned files.
             </p>
           </Dragger>
-          <div className="mt-3">
-            <CustomInput type="text" lable="Enter blog title" />
-          </div>
-          <select name="" className="form-control mb-3 py-3" id="">
-            <option value="">Select blog category</option>
-          </select>
-          <ReactQuill
-            className="bg-white"
-            theme="snow"
-            value={desc}
-            onChange={(e) => {
-              handleDesc(e);
-            }}
-          />
           <button
             type="submit"
-            className="btn btn-success mt-3 border-0 rounded-3"
+            className="btn btn-success border-0 rounded-3 mt-3"
           >
-            Add blog
+            Add Product
           </button>
         </form>
       </div>
@@ -75,4 +66,4 @@ const AddBlog = () => {
   );
 };
 
-export default AddBlog;
+export default AddProduct;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "antd";
-
+import { BiEditAlt } from "react-icons/bi";
+import { AiFillDelete } from "react-icons/ai";
 const columns = [
   {
     title: "SNo",
@@ -29,13 +30,13 @@ for (let i = 0; i < 46; i++) {
   });
 }
 
-const BlogCateList = () => {
+const ProductList = () => {
   return (
     <div>
-      <h3 className="mb-4 title">Blog Category</h3>
+      <h3 className="mb-4">Product List</h3>
       <Table columns={columns} dataSource={data1} />
     </div>
   );
 };
 
-export default BlogCateList;
+export default ProductList;
