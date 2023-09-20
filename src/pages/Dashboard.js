@@ -168,14 +168,14 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex gap-3 justify-content-between">
-        <div className="mt-4 w-50 flex-grow-1">
+      <div className="">
+        <div className="mt-4">
           <h3 className="mb-4">Income statics</h3>
           <div>
             <Column {...config} />
           </div>
         </div>
-        <div className="mt-4 w-50 flex-grow-1">
+        <div className="mt-4">
           <h3 className="mb-4">Recent Order</h3>
           <div>
             <Table columns={columns} dataSource={data1} />

@@ -160,28 +160,41 @@ const MainLayout = () => {
               height: 64,
             }}
           />
-          <div className="d-flex gap-3 align-items-center">
+          <div className="d-flex gap-3 align-items-center ">
             <div className="position-relative">
               <AiOutlineBell className="fs-5"></AiOutlineBell>
               <span className="badge bg-warning rounded-circle p-1 position-absolute">
                 99+
               </span>
             </div>
-            <div className="d-flex gap-3 align-items-center">
+            <div className="d-flex gap-3 align-items-center dropdown">
               <div>
                 <img
                   src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
                   alt=""
                 />
               </div>
-              <div>
+              <div
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <h5>quangteo</h5>
                 <p>toilateo@gmail.com</p>
               </div>
-              <div
-                className="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-              ></div>
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <Link className="dropdown-item py-2" to="/">
+                  Profile
+                </Link>
+                <Link className="dropdown-item py-2" to="/">
+                  Setting
+                </Link>
+                <Link className="dropdown-item py-2" to="/">
+                  Logout
+                </Link>
+              </div>
             </div>
           </div>
         </Header>

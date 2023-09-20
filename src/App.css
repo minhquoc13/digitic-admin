@@ -34,10 +34,15 @@
 .sub-title {
   font-size: 24px;
   font-family: Roboto !important ;
+  color: var(--color-212529);
 }
 
 .desc {
   font-size: 14px;
   font-family: Roboto !important ;
   color: var(--color-828599);
+}
+
+.dropdown-item {
+  line-height: 2rem !important;
 }
